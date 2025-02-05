@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: your-username/my-netlify-site # GitHubリポジトリ名
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "ブログ"
+    folder: "content/blog"
+    create: true
+    fields:
+      - { name: "title", label: "タイトル", widget: "string" }
+      - { name: "date", label: "日付", widget: "datetime" }
+      - { name: "body", label: "本文", widget: "markdown" }
